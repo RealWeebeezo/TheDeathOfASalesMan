@@ -8,8 +8,10 @@ public class SceneManager {
 
     }
 
-    public static void print(String line, int pause, int timeToPrint) throws InterruptedException {
-        System.out.println("\n");
+    public static void print(String line, int pause, int timeToPrint, boolean newLine) throws InterruptedException {
+        if (newLine) {
+            System.out.println("\n");
+        }
         for (int i  = 0; i < line.length(); i++){
             System.out.print(line.charAt(i));
             TimeUnit.MILLISECONDS.sleep(timeToPrint);
