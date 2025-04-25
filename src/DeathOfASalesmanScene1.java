@@ -15,6 +15,7 @@ public class DeathOfASalesmanScene1 {
             System.out.println("=== Death of a Salesman===");
             System.out.println("1. Watch Scene");
             System.out.println("2. Exit");
+            System.out.println("3. Test");
             System.out.print("Choose an option: ");
             String choice = scanner.nextLine();
 
@@ -27,6 +28,8 @@ public class DeathOfASalesmanScene1 {
                     break;
                 case "3":
                     System.out.println("\nLinda: \"Attention, attention must be finally paid to such a person.\"\n");
+                    SceneManager.print("Testing this line", 4, 50);
+                    SceneManager.print("......", 1, 500);
                     break;
                 case "4":
                     System.out.println("Goodbye, Willy.");
@@ -35,8 +38,8 @@ public class DeathOfASalesmanScene1 {
                     System.out.println("Invalid choice. Try again.");
             }
 
-
-            if (choice) {
+/*
+            if (choice.contains("1")) {
                 playScene();
                 System.out.println("\n(Press Enter to return to menu)");
                 scanner.nextLine();
@@ -46,24 +49,26 @@ public class DeathOfASalesmanScene1 {
                 System.out.println("Invalid choice.");
                 TimeUnit.SECONDS.sleep(1);
             }
+
+ */
+            System.out.println("Goodbye Willy");
         }
 
-        System.out.println("Goodbye.");
-        scanner.close();
+
     }
 
     private static void playScene() throws InterruptedException {
         SceneManager.sceneTransition("Evening falls. A tired man approaches his home...");
         Images.showWilly();
-        SceneManager.pause("Willy: (murmuring) Another day... and nothing sold.", 5);
+        //SceneManager.pause("Willy: (murmuring) Another day... and nothing sold.", 5);
 
         SceneManager.sceneTransition("Linda appears at the door, concern in her eyes.");
-        SceneManager.pause("Linda: You’re home early, Willy.", 2);
+        //SceneManager.pause("Linda: You’re home early, Willy.", 2);
 
         Images.showWilly();
-        SceneManager.pause("Willy: I couldn’t keep my eyes open. I nearly drove off the road.", 3);
+        //SceneManager.pause("Willy: I couldn’t keep my eyes open. I nearly drove off the road.", 3);
 
-        SceneManager.pause("Linda: You need rest, dear. Come inside.", 2);
+       // SceneManager.pause("Linda: You need rest, dear. Come inside.", 2);
 
         SceneManager.sceneTransition("Fade to black.");
     }

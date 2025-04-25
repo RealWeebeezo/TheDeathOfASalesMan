@@ -8,9 +8,13 @@ public class SceneManager {
 
     }
 
-    public static void pause(String line, int seconds) throws InterruptedException {
-        System.out.println("\n" + line);
-        TimeUnit.SECONDS.sleep(seconds);
+    public static void print(String line, int pause, int timeToPrint) throws InterruptedException {
+        System.out.println("\n");
+        for (int i  = 0; i < line.length(); i++){
+            System.out.print(line.charAt(i));
+            TimeUnit.MILLISECONDS.sleep(timeToPrint);
+        }
+        TimeUnit.SECONDS.sleep(pause);
         clearConsole();
     }
 
