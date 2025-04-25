@@ -18,4 +18,16 @@ public class SceneManager {
         System.out.print("\033[H\033[2J");
         System.out.flush();
     }
+
+    public static void sceneTransition(String text) throws InterruptedException {
+        SceneManager.clearConsole();
+        for (int i = 0; i < 3; i++) {
+            System.out.print(".");
+            TimeUnit.MILLISECONDS.sleep(300);
+        }
+        SceneManager.clearConsole();
+        System.out.println(text);
+        TimeUnit.SECONDS.sleep(2);
+        SceneManager.clearConsole();
+    }
 }

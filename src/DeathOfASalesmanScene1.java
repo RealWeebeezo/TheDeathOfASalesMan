@@ -1,3 +1,4 @@
+import Utility.Images;
 import Utility.SceneManager;
 
 import java.util.concurrent.TimeUnit;
@@ -10,13 +11,32 @@ public class DeathOfASalesmanScene1 {
         Scanner scanner = new Scanner(System.in);
         while (true) {
             SceneManager.clearConsole();
-            System.out.println("=== Death of a Salesman: Scene 1 — Willy Comes Home ===");
+            Images.showWilly();
+            System.out.println("=== Death of a Salesman===");
             System.out.println("1. Watch Scene");
             System.out.println("2. Exit");
             System.out.print("Choose an option: ");
             String choice = scanner.nextLine();
 
-            if (choice.equals("1")) {
+            switch (choice){
+                case "1":
+                    System.out.println("\nWilly: \"He could be anything in this world, Biff.\"\n");
+                    break;
+                case "2":
+                    System.out.println("\nWilly: \"The man who makes an appearance in the business world... is the man who gets ahead.\"\n");
+                    break;
+                case "3":
+                    System.out.println("\nLinda: \"Attention, attention must be finally paid to such a person.\"\n");
+                    break;
+                case "4":
+                    System.out.println("Goodbye, Willy.");
+                    break;
+                default:
+                    System.out.println("Invalid choice. Try again.");
+            }
+
+
+            if (choice) {
                 playScene();
                 System.out.println("\n(Press Enter to return to menu)");
                 scanner.nextLine();
@@ -33,50 +53,20 @@ public class DeathOfASalesmanScene1 {
     }
 
     private static void playScene() throws InterruptedException {
-        sceneTransition("Evening falls. A tired man approaches his home...");
-        showWilly();
+        SceneManager.sceneTransition("Evening falls. A tired man approaches his home...");
+        Images.showWilly();
         SceneManager.pause("Willy: (murmuring) Another day... and nothing sold.", 5);
 
-        sceneTransition("Linda appears at the door, concern in her eyes.");
-        showLinda();
+        SceneManager.sceneTransition("Linda appears at the door, concern in her eyes.");
         SceneManager.pause("Linda: You’re home early, Willy.", 2);
 
-        showWilly();
+        Images.showWilly();
         SceneManager.pause("Willy: I couldn’t keep my eyes open. I nearly drove off the road.", 3);
 
-        showLinda();
         SceneManager.pause("Linda: You need rest, dear. Come inside.", 2);
 
-        sceneTransition("Fade to black.");
+        SceneManager.sceneTransition("Fade to black.");
     }
-
-    private static void sceneTransition(String text) throws InterruptedException {
-        SceneManager.clearConsole();
-        for (int i = 0; i < 3; i++) {
-            System.out.print(".");
-            TimeUnit.MILLISECONDS.sleep(300);
-        }
-        SceneManager.clearConsole();
-        System.out.println(text);
-        TimeUnit.SECONDS.sleep(2);
-        SceneManager.clearConsole();
-    }
-
-    private static void showWilly() {
-        System.out.println("      __");
-        System.out.println("     /  \\");
-        System.out.println("    | oo|     (Willy Loman)");
-        System.out.println("    |___|");
-        System.out.println("    |___|   A tired figure in a rumpled coat.");
-    }
-
-    private static void showLinda() {
-        System.out.println("     \\||/");
-        System.out.println("     (•_•)    (Linda)");
-        System.out.println("     /|\\");
-        System.out.println("     / \\    Graceful, with deep concern.");
-    }
-
 
 }
 
