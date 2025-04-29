@@ -1,6 +1,6 @@
 import Utility.Images;
+import Utility.SceneLines;
 import Utility.SceneManager;
-
 
 import java.util.Scanner;
 
@@ -13,7 +13,7 @@ public class DeathOfASalesmanScene1 {
         while (loop) {
             SceneManager.clearConsole();
             Images.showWilly();
-            SceneManager.print("",3,0);
+            SceneManager.print("",0,0,true);
             System.out.println("=== Death of a Salesman===");
             System.out.println("1. Watch A Scene");
             System.out.println("2. Diary");
@@ -31,15 +31,15 @@ public class DeathOfASalesmanScene1 {
                     System.out.println("\nWilly: \"The man who makes an appearance in the business world... is the man who gets ahead.\"\n");
                     break;
                 case "3":
-                    System.out.println("\nLinda: \"Attention, attention must be finally paid to such a person.\"\n");
+                    SceneManager.print(SceneLines.essay(), 4, 10, true);
                     break;
                 case "4":
                     System.out.println("Goodbye, Willy.");
                     loop = false;
                     break;
                 case "5":
-                    SceneManager.print("Testing this line", 4, 50);
-                    SceneManager.print("......", 1, 500);
+                    SceneManager.print("Testing this line", 4, 50,false);
+                    SceneManager.print("......", 1, 500,true);
                 default:
                     System.out.println("Invalid choice. Try again.");
             }
@@ -50,9 +50,9 @@ public class DeathOfASalesmanScene1 {
     }
 
     private static void playScene() throws InterruptedException {
-        SceneManager.print("(Willy):",0,0);
-        SceneManager.print("The American Dream",0,100);
-        SceneManager.print("...",3,500);
+        SceneManager.print("(Willy):",0,0, false);
+        SceneManager.print("The American Dream",0,100, false);
+        SceneManager.print("...",3,500, false);
     }
 
 }
