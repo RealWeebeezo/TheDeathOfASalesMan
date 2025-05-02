@@ -45,21 +45,18 @@ public class SceneLines {
     public static void diary() throws InterruptedException {
         SceneManager.sceneTransition("Opening Willy Loman's diary...");
 
-        // Entry 1 — Early Fatigue
         SceneManager.print("March 28th, 1948", 1, 40, true);
         SceneManager.print("The road was long today.", 1, 30, true);
         SceneManager.print("I stopped in Hartford, but I couldn’t make a sale.", 1, 30, true);
         SceneManager.print("The man didn’t even remember me.", 1, 35, true);
         SceneManager.print("I laughed like I meant it.", 2, 28, true);
 
-        // Entry 2 — Linda’s Worry
         SceneManager.print("March 30th, 1948", 1, 40, true);
         SceneManager.print("Linda asked if I was okay.", 1, 30, true);
         SceneManager.print("She said I talk to myself more often now.", 1, 30, true);
         SceneManager.print("I told her I was practicing speeches.", 1, 25, true);
         SceneManager.print("But truth is, I’m just trying to hear a voice that believes in me.", 2, 26, true);
 
-        // Entry 3 — Remembering Biff
         SceneManager.sceneTransition("A memory flickers between the pages...");
         SceneManager.print("April 1st, 1948", 1, 38, true);
         SceneManager.print("I saw Biff outside with his old football.", 1, 32, true);
@@ -67,13 +64,11 @@ public class SceneLines {
         SceneManager.print("They all said: 'He’s going places, that boy.'", 1, 30, true);
         SceneManager.print("Now he avoids my eyes. Like he knows something I don't.", 2, 30, true);
 
-        // Entry 4 — Hope
         SceneManager.print("April 3rd, 1948", 1, 38, true);
         SceneManager.print("Howard might give me a local job.", 1, 30, true);
         SceneManager.print("Just in the city. No driving. No swerving off the road.", 1, 25, true);
         SceneManager.print("I’ll wear my best tie. I’ll smile. I’ll make him see me again.", 2, 28, true);
 
-        // Entry 5 — The Dream Cracks
         SceneManager.sceneTransition("Later that day...");
         SceneManager.print("April 3rd, 1948 — Evening", 1, 40, true);
         SceneManager.print("Howard told me I talk too much.", 1, 25, true);
@@ -81,8 +76,6 @@ public class SceneLines {
         SceneManager.print("I begged him.", 1, 28, true);
         SceneManager.print("I told him about Dave Singleman — the man who died with green slippers and clients mourning him in every city.", 1, 25, true);
         SceneManager.print("But Howard just nodded and said it was time to let go.", 2, 28, true);
-
-        // Final Entry — Collapse
         SceneManager.sceneTransition("The ink on the page runs like tears...");
         SceneManager.print("April 4th, 1948", 1, 40, true);
         SceneManager.print("I sat in the kitchen, and the refrigerator made a noise I’ve never heard before.", 1, 30, true);
@@ -95,6 +88,63 @@ public class SceneLines {
         SceneManager.sceneTransition("The diary closes. Silence remains.");
     }
     public static void playScene(){
-        SceneManager.print("Ben: TIME, WILLIAM, TIME!",2,50,true);
+        SceneManager.print("Ben: TIME, WILLIAM, TIME!", 2, 50, true);
+        SceneManager.print("Oh Ben", 0, 50, true);
+        SceneManager.print("...", 1, 100, false);
+        SceneManager.print("I always knew one way or another we were gonna make it, Biff and I!", 2, 50, true);
+        SceneManager.print("Ben! Ben, where do I", 0, 50, true);
+        SceneManager.print("...?", 2, 150, false);
+
+        SceneManager.print("Ben: It’s dark there, William. Very dark.", 3, 50, true);
+        SceneManager.print("Willy: A perfect proposition all around.", 1, 50, true);
+        SceneManager.print("Twenty-thousand dollars for Biff’s future.", 2, 50, true);
+        SceneManager.print("Ben: And he’ll hate you for it.", 1, 50, true);
+        SceneManager.print("Willy: No, that boy is going to be magnificent!", 2, 50, true);
+        SceneManager.print("He’ll see it then. He’ll understand.", 2, 50, true);
+
+        SceneManager.print("Ben: William, it’s a cowardly thing to do.", 2, 50, true);
+        SceneManager.print("Willy: No! It takes a great man to give up everything for his son!", 2, 50, true);
+        SceneManager.print("I’m not being foolish, Ben. It’s guaranteed!", 1, 50, true);
+
+        SceneManager.print("Ben: The jungle is dark but full of diamonds, William.", 2, 50, true);
+        SceneManager.print("Willy: That’s it. That’s it, isn’t it, Ben?", 1, 50, true);
+        SceneManager.print("You’ve got to go in and risk everything.", 1, 50, true);
+        SceneManager.print("I see it now. It’s all so clear.", 2, 50, true);
+
+        SceneManager.print("Ben: Time, William, time!", 2, 50, true);
+        SceneManager.print("Willy: Goodbye. I'm not worth anything, but if he takes what I leave him—he'll be ahead of Bernard again!", 2, 50, true);
+        SceneManager.print("Ben, he’ll worship me for it. It’s the only way.", 2, 50, true);
+
+        SceneManager.print("[Willy slowly walks off. The sound of a car engine starting is heard.]", 3, 75, true);
+        SceneManager.print("  ........-+*++++++++++++++++********++++*****++++++++.....                                        
+                                             ......=++-=::---===========------==---------:.......:*:......                                    
+                                            .....-+==-=.:................................-+........:+:....   .                                
+                                           .. .-+=+.+...=..................................+:... .....*:... ..                                
+                                          ...-*-+.=-....=.                               ...==..... ....+-....                                
+                          ........        .:*:+:-=.....:-..                         ..... . .:+.. ........+-..        .........               
+                     ....................:+::=.+.......:-..           ................... .....+-....... ...+-...................   ...       
+                     .........:-=+***+-::+*=.-=...... .-:.......................................-+............+=.................... ..       
+.................:--=++==-::...............-.:---============--------------------:-::::-::::::::::*...       .........:::-::-:::-***=.......  
+.......=+++-...... . ..  .....            .:..  ................................--::...-..............            .  ................*..      
+...+-............    ......... . .... .....:..................................:-----..-......    .     ..         ...       . .......:+....  .
+...++.:..        .....................................................................=... ..      ...   .                      ......+=.... .
+....*:....       .............:.:.:::::::::-::::::::--::::--:::::::::::-:::::::.:-:::-=::...........:.....             .............=-=*.... .
+.....+................-******+:....       .:..   ......                     .....   .-:.:....-++*+=-==*+++........            .....=****....  
+....+*+**+++++.....+-.=-:..:=+:=+...     ..-..   .         .........        .....   .=.:...=+=.-+-...:-+:=**-..               .....+***=....  
+....*=.....::-...-+.=..........+.*-..... ..=....... ...  ............................+.-..=*:-...........+:+=+....  ...   ........+=::....    
+......+.........=-.:............+:+-.......=.......:------------=-==+==+=++=====+==--+-:.**.=......::.....--*+-...  ...   .. ..-*:.....       
+......:+.......-+.-....=:=:-.....*.*.......-........................................--..==-=.....-.:.=.....*:**........::-==+-:... ..         
+.......:++==-::-=.-.....-.=-:....*.+++=-================================-----------::--=+:-=.....-.-:=.....+.+:++=-::..........               
+.  . ...........+.-.....-::.....:+:*.=---==-============+==============================-..*:-.............:==-.. .. ......   .                
+         .......:+.=............*.*.......................................................-=:-...........:+-+..       .........               
+       . .........+::-........=--*........    .............................................:+:--.......-+:+-..                                
+                 ...+=.:-==-::++...                                                     ... .:++...::..=*:....                                
+                 .......:--:......                                                      .  ........:..........                                
+                 .       ....                                                                            .....                                
+                         ...                                                                          ..  ",0,0,true);
+        SceneManager.print("[A moment of silence. Then the roar of the engine... and a sudden crash.]", 4, 100, true);
+
+        SceneManager.print("Linda (offstage): Willy? Willy!", 3, 50, true);
+        SceneManager.print("[Blackout.]", 2, 50, true);
     }
 }
