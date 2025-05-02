@@ -25,10 +25,10 @@ public class DeathOfASalesmanScene1 {
 
             switch (choice){
                 case "1":
-                    playScene();
+                    SceneManager.playScene();
                     break;
                 case "2":
-                    System.out.println("\nWilly: \"The man who makes an appearance in the business world... is the man who gets ahead.\"\n");
+                    SceneManager.diary();
                     break;
                 case "3":
                     SceneManager.print(SceneLines.essay(), 4, 10, true);
