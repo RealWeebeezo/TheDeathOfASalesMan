@@ -94,4 +94,7 @@ public class SceneLines {
 
         SceneManager.sceneTransition("The diary closes. Silence remains.");
     }
+    public static void playScene(){
+        SceneManager.print("Ben: TIME, WILLIAM, TIME!",2,50,true);
+    }
 }
