@@ -41,4 +41,57 @@ public class SceneLines {
                 In a society where many simply chase materialistic success, Biff’s eventual clarity emphasizes the importance of self-acceptance and the clear dangers of living for others’ expectations.
                \s""";
     }
+
+    public static void diary() throws InterruptedException {
+        SceneManager.sceneTransition("Opening Willy Loman's diary...");
+
+        // Entry 1 — Early Fatigue
+        SceneManager.print("March 28th, 1948", 1, 40, true);
+        SceneManager.print("The road was long today.", 1, 30, true);
+        SceneManager.print("I stopped in Hartford, but I couldn’t make a sale.", 1, 30, true);
+        SceneManager.print("The man didn’t even remember me.", 1, 35, true);
+        SceneManager.print("I laughed like I meant it.", 2, 28, true);
+
+        // Entry 2 — Linda’s Worry
+        SceneManager.print("March 30th, 1948", 1, 40, true);
+        SceneManager.print("Linda asked if I was okay.", 1, 30, true);
+        SceneManager.print("She said I talk to myself more often now.", 1, 30, true);
+        SceneManager.print("I told her I was practicing speeches.", 1, 25, true);
+        SceneManager.print("But truth is, I’m just trying to hear a voice that believes in me.", 2, 26, true);
+
+        // Entry 3 — Remembering Biff
+        SceneManager.sceneTransition("A memory flickers between the pages...");
+        SceneManager.print("April 1st, 1948", 1, 38, true);
+        SceneManager.print("I saw Biff outside with his old football.", 1, 32, true);
+        SceneManager.print("He used to shine. Everyone saw it.", 1, 28, true);
+        SceneManager.print("They all said: 'He’s going places, that boy.'", 1, 30, true);
+        SceneManager.print("Now he avoids my eyes. Like he knows something I don't.", 2, 30, true);
+
+        // Entry 4 — Hope
+        SceneManager.print("April 3rd, 1948", 1, 38, true);
+        SceneManager.print("Howard might give me a local job.", 1, 30, true);
+        SceneManager.print("Just in the city. No driving. No swerving off the road.", 1, 25, true);
+        SceneManager.print("I’ll wear my best tie. I’ll smile. I’ll make him see me again.", 2, 28, true);
+
+        // Entry 5 — The Dream Cracks
+        SceneManager.sceneTransition("Later that day...");
+        SceneManager.print("April 3rd, 1948 — Evening", 1, 40, true);
+        SceneManager.print("Howard told me I talk too much.", 1, 25, true);
+        SceneManager.print("He played a wire recording of his son and didn’t even look at me.", 1, 30, true);
+        SceneManager.print("I begged him.", 1, 28, true);
+        SceneManager.print("I told him about Dave Singleman — the man who died with green slippers and clients mourning him in every city.", 1, 25, true);
+        SceneManager.print("But Howard just nodded and said it was time to let go.", 2, 28, true);
+
+        // Final Entry — Collapse
+        SceneManager.sceneTransition("The ink on the page runs like tears...");
+        SceneManager.print("April 4th, 1948", 1, 40, true);
+        SceneManager.print("I sat in the kitchen, and the refrigerator made a noise I’ve never heard before.", 1, 30, true);
+        SceneManager.print("Linda sewed in the corner. She didn’t ask how the meeting went.", 1, 30, true);
+        SceneManager.print("She already knew.", 1, 25, true);
+
+        SceneManager.print("Am I still someone?", 2, 35, true);
+        SceneManager.print("Or just the echo of what I wanted to be?", 3, 30, true);
+
+        SceneManager.sceneTransition("The diary closes. Silence remains.");
+    }
 }
