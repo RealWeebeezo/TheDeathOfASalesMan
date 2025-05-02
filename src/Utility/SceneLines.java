@@ -87,7 +87,7 @@ public class SceneLines {
 
         SceneManager.sceneTransition("The diary closes. Silence remains.");
     }
-    public static void playScene(){
+    public static void playScene() throws InterruptedException{
         SceneManager.print("Ben: TIME, WILLIAM, TIME!", 2, 50, true);
         SceneManager.print("Oh Ben", 0, 50, true);
         SceneManager.print("...", 1, 100, false);
